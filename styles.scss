@@ -36,9 +36,9 @@ body{
     align-items: center;
     height: 100px;
 
-    & &__logo{
-        padding: 0px 30px;
-    }
+    // & &__logo{
+    //     padding: 0px 30px;
+    // }
 
     & &__menu{
         display: flex;
@@ -66,9 +66,9 @@ body{
 .main-component{
     display: flex;
     flex-direction: column;
-    width: 67%;
+    width: 63%;
     height: 100%;
-    padding: 30px 30px 0px 30px;
+    padding: 30px 30px 0px 0px;
 
     & &__info{
         display: flex;
@@ -145,6 +145,44 @@ body{
     & &__component-border{
         margin-top: 15px;
         border-bottom: solid var(--color-newsText) 0.5px;
+    }
+}
+
+.small-components{
+    display: flex;
+    flex-direction: row;
+    max-height: 130px;
+    margin-bottom: 50px;
+}
+
+.small-component{
+    width: 33%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & &__content{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    & &__number{
+        font-size: 30px;
+        font-weight: 600;
+        color: var(--color-newsText);
+    }
+
+    & &__title{
+        margin: 15px 0px;
+        font-weight: 700;
+    }
+
+    & &__text{
+        font-size: 15px;
+        color: var(--color-newsText);
+        line-height: 1.2rem;
+        font-weight: 400;
     }
 }
 

@@ -36,10 +36,6 @@ body {
   height: 100px;
 }
 
-.header .header__logo {
-  padding: 0px 30px;
-}
-
 .header .header__menu {
   display: flex;
   flex-direction: row;
@@ -65,9 +61,9 @@ body {
 .main-component {
   display: flex;
   flex-direction: column;
-  width: 67%;
+  width: 63%;
   height: 100%;
-  padding: 30px 30px 0px 30px;
+  padding: 30px 30px 0px 0px;
 }
 
 .main-component .main-component__info {
@@ -144,4 +140,42 @@ body {
 .right-news .right-news__component-border {
   margin-top: 15px;
   border-bottom: solid var(--color-newsText) 0.5px;
+}
+
+.small-components {
+  display: flex;
+  flex-direction: row;
+  max-height: 130px;
+  margin-bottom: 50px;
+}
+
+.small-component {
+  width: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.small-component .small-component__content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.small-component .small-component__number {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--color-newsText);
+}
+
+.small-component .small-component__title {
+  margin: 15px 0px;
+  font-weight: 700;
+}
+
+.small-component .small-component__text {
+  font-size: 15px;
+  color: var(--color-newsText);
+  line-height: 1.2rem;
+  font-weight: 400;
 }
